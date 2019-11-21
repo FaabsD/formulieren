@@ -30,8 +30,8 @@
   <p>Om een eerste stap te zetten naar een persoonlijk opleidingsplan zul je eerst een paar vragen voor jezelf moeten beantoorden. Dit formulier helpt jou daar bij.</p>
 <!-- Begin Form -->
   <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
-  Naam:
-  <input autofocus required type="text" name="Naam" placeholder="bijv. Jan Jansen">
+  <label>Naam:
+  <input autofocus required type="text" name="Naam" placeholder="bijv. Jan Jansen"></label>
   <select required name="JouwKlas">
     <option value="">Selecteer jouw klas</option>
     <option value="MG1A">MG1A</option>
@@ -39,8 +39,16 @@
     <option value="MG1C">MG1C</option>
     <option value="MG1D">MG1D</option>
   </select>
-  <br>
-  <!-- Radio buttons -->
+  <fieldset>
+    <legend>Contact en datum van invullen</legend>
+    <label>Email:
+      <input type="email" name="email" placeholder="bijv. iemand@mymail.nl" required></label>
+    <label>Telefoonnummer:
+    <input type="tel" name="Telefoonnummer" required></label>
+    <label for="Date">Datum:</label>
+    <input type="date" name="Datum van invullen" id="Date" required>
+  </fieldset>
+<!-- Radio buttons -->
   <fieldset class="Welbevinden">
     <legend>Welbevinden</legend>
     <p>Hoe positief ben je op dit moment over je opleiding?</p>
