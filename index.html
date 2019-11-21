@@ -12,6 +12,15 @@
     border: 0;
     margin: 1em;
     }
+    .Welbevinden label{
+      display: inline-block;
+      padding: 1em;
+      cursor: pointer;
+      text-align: center;
+    }
+    .Welbevinden input[type="radio"]{
+      display: block;
+    }
 
   </style>
 </head>
@@ -19,9 +28,10 @@
 <body lang="nl">
   <h1>Een plan voor jouw ontwikkeling</h1>
   <p>Om een eerste stap te zetten naar een persoonlijk opleidingsplan zul je eerst een paar vragen voor jezelf moeten beantoorden. Dit formulier helpt jou daar bij.</p>
+<!-- Begin Form -->
   <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
   Naam:
-  <input required type="text" name="Naam" placeholder="bijv. Jan Jansen">
+  <input autofocus required type="text" name="Naam" placeholder="bijv. Jan Jansen">
   <select required name="JouwKlas">
     <option value="">Selecteer jouw klas</option>
     <option value="MG1A">MG1A</option>
@@ -30,70 +40,86 @@
     <option value="MG1D">MG1D</option>
   </select>
   <br>
-  <fieldset>
+  <!-- Radio buttons -->
+  <fieldset class="Welbevinden">
     <legend>Welbevinden</legend>
     <p>Hoe positief ben je op dit moment over je opleiding?</p>
-      <input required type="radio" name="Hoe positief" value="0">0
-      <input required type="radio" name="Hoe positief" value="1">1
-      <input required type="radio" name="Hoe positief" value="2">2
-      <input required type="radio" name="Hoe positief" value="3">3
-      <input required type="radio" name="Hoe positief" value="4">4
-      <input required type="radio" name="Hoe positief" value="5">5
-      <input required type="radio" name="Hoe positief" value="6">6
-      <input required type="radio" name="Hoe positief" value="7">7
-      <input required type="radio" name="Hoe positief" value="8">8
-      <input required type="radio" name="Hoe positief" value="9">9
-      <input required type="radio" name="Hoe positief" value="10">10
+      <label><input required type="radio" name="Hoe positief" value="0">0</label>
+      <label><input required type="radio" name="Hoe positief" value="1">1</label>
+      <label><input required type="radio" name="Hoe positief" value="2">2</label>
+      <label><input required type="radio" name="Hoe positief" value="3">3</label>
+      <label><input required type="radio" name="Hoe positief" value="4">4</label>
+      <label><input required type="radio" name="Hoe positief" value="5">5</label>
+      <label><input required type="radio" name="Hoe positief" value="6">6</label>
+      <label><input required type="radio" name="Hoe positief" value="7">7</label>
+      <label><input required type="radio" name="Hoe positief" value="8">8</label>
+      <label><input required type="radio" name="Hoe positief" value="9">9</label>
+      <label><input required type="radio" name="Hoe positief" value="10">10</label>
     <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
-      <input required type="radio" name="Motivatie" value="0">0
-      <input required type="radio" name="Motivatie" value="1">1
-      <input required type="radio" name="Motivatie" value="2">2
-      <input required type="radio" name="Motivatie" value="3">3
-      <input required type="radio" name="Motivatie" value="4">4
-      <input required type="radio" name="Motivatie" value="5">5
-      <input required type="radio" name="Motivatie" value="6">6
-      <input required type="radio" name="Motivatie" value="7">7
-      <input required type="radio" name="Motivatie" value="8">8
-      <input required type="radio" name="Motivatie" value="9">9
-      <input required type="radio" name="Motivatie" value="10">10
+      <label><input required type="radio" name="Motivatie" value="0">0</label>
+      <label><input required type="radio" name="Motivatie" value="1">1</label>
+      <label><input required type="radio" name="Motivatie" value="2">2</label>
+      <label><input required type="radio" name="Motivatie" value="3">3</label>
+      <label><input required type="radio" name="Motivatie" value="4">4</label>
+      <label><input required type="radio" name="Motivatie" value="5">5</label>
+      <label><input required type="radio" name="Motivatie" value="6">6</label>
+      <label><input required type="radio" name="Motivatie" value="7">7</label>
+      <label><input required type="radio" name="Motivatie" value="8">8</label>
+      <label><input required type="radio" name="Motivatie" value="9">9</label>
+      <label><input required type="radio" name="Motivatie" value="10">10</label>
     <p>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?</p>
-      <input required type="radio" name="Vertrouwen" value="0">0
-      <input required type="radio" name="Vertrouwen" value="1">1
-      <input required type="radio" name="Vertrouwen" value="2">2
-      <input required type="radio" name="Vertrouwen" value="3">3
-      <input required type="radio" name="Vertrouwen" value="4">4
-      <input required type="radio" name="Vertrouwen" value="5">5
-      <input required type="radio" name="Vertrouwen" value="6">6
-      <input required type="radio" name="Vertrouwen" value="7">7
-      <input required type="radio" name="Vertrouwen" value="8">8
-      <input required type="radio" name="Vertrouwen" value="9">9
-      <input required type="radio" name="Vertrouwen" value="10">10
+      <label><input required type="radio" name="Vertrouwen" value="0">0</label>
+      <label><input required type="radio" name="Vertrouwen" value="1">1</label>
+      <label><input required type="radio" name="Vertrouwen" value="2">2</label>
+      <label><input required type="radio" name="Vertrouwen" value="3">3</label>
+      <label><input required type="radio" name="Vertrouwen" value="4">4</label>
+      <label><input required type="radio" name="Vertrouwen" value="5">5</label>
+      <label><input required type="radio" name="Vertrouwen" value="6">6</label>
+      <label><input required type="radio" name="Vertrouwen" value="7">7</label>
+      <label><input required type="radio" name="Vertrouwen" value="8">8</label>
+      <label><input required type="radio" name="Vertrouwen" value="9">9</label>
+      <label><input required type="radio" name="Vertrouwen" value="10">10</label>
   </fieldset>
-  <fieldset>
+  <!-- Checkboxes -->
+  <fieldset class="Sterke_kanten">
     <legend>Sterke kanten</legend>
     <p>Wat zijn jouw sterke kanten?</p>
-    <input type="checkbox" name="Sterke kanten 1" value="HTML/CSS">Coderen in HTML/CSS
-    <input type="checkbox" name="Sterke kanten 2" value="Java">Programmeren in Java
-    <input type="checkbox" name="Sterke kanten 3" value="JavaScript">Scripting: programmeren in JavaScript
-    <input type="checkbox" name="Sterke kanten 4" value="Planning">Planning
-    <input type="checkbox" name="Sterke kanten 5" value="Samenwerken">Samenwerken
+    <input type="checkbox" name="Sterke kanten 1" value="HTML/CSS" id="Sterk1">
+      <label for="Sterk1">Coderen in HTML/CSS</label>
+    <input type="checkbox" name="Sterke kanten 2" value="Java" id="Sterk2">
+      <label for="Sterk2">Programmeren in Java</label>
+    <input type="checkbox" name="Sterke kanten 3" value="JavaScript" id="Sterk3">
+      <label for="Sterk3">Scripting: programmeren in JavaScript</label>
+    <input type="checkbox" name="Sterke kanten 4" value="Planning" id="Sterk4">
+      <label for="Sterk4">Planning</label>
+    <input type="checkbox" name="Sterke kanten 5" value="Samenwerken" id="Sterk5">
+      <label for="Sterk5">Samenwerken</label>
+
   </fieldset>
   <fieldset>
     <legend>Nog te ontwikkelen</legend>
     <p>Aan welke skills moet je nog extra aandacht besteden?</p>
-    <input type="checkbox" name="Nog te ontwikkelen 1" value="HTML/CSS">Coderen in HTML/CSS
-    <input type="checkbox" name="Nog te ontwikkelen 2" value="Java">Programmeren in Java
-    <input type="checkbox" name="Nog te ontwikkelen 3" value="JavaScript">Scripting: programmeren in JavaScript
-    <input type="checkbox" name="Nog te ontwikkelen 4" value="Planning">Planning
-    <input type="checkbox" name="Nog te ontwikkelen 5" value="Samenwerken">Samenwerken
+    <input type="checkbox" name="Nog te ontwikkelen 1" value="HTML/CSS" id="Ontwikkelen1">
+      <label for="Ontwikkelen1">Coderen in HTML/CSS</label>
+    <input type="checkbox" name="Nog te ontwikkelen 2" value="Java" id="Ontwikkelen2">
+      <label for="Ontwikkelen2">Programmeren in Java</label>
+    <input type="checkbox" name="Nog te ontwikkelen 3" value="JavaScript" id="Ontwikkelen3">
+      <label for="Ontwikkelen3">Scripting: programmeren in JavaScript</label>
+    <input type="checkbox" name="Nog te ontwikkelen 4" value="Planning" id="Ontwikkelen4">
+      <label for="Ontwikkelen4">Planning</label>
+    <input type="checkbox" name="Nog te ontwikkelen 5" value="Samenwerken" id="Ontwikkelen5">
+      <label for="Ontwikkelen5">Samenwerken</label>
+
   </fieldset>
-  <fieldset>
+  <!-- Radio buttons -->
+  <fieldset class="Verwachting">
     <legend>Verwachting</legend>
     <p>Voldoet de opleiding aan jouw verwachtingen?</p>
-    <input required type="radio" name="Verwachting" value="Ja">Ja
-    <input required type="radio" name="Verwachting" value="Neutraal">Neutraal
-    <input required type="radio" name="Verwachting" value="Nee">Nee
+    <label><input required type="radio" name="Verwachting" value="Ja">Ja</label>
+    <label><input required type="radio" name="Verwachting" value="Neutraal">Neutraal</label>
+    <label><input required type="radio" name="Verwachting" value="Nee">Nee</label>
   </fieldset>
+  <!-- textarea -->
     <p>Wat zijn jouw plannen voor de toekomst?</p>
     <textarea name="Plannen" rows="8" cols="80"></textarea><br>
     <input type="submit" value="Verstuur">
